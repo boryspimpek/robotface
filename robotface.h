@@ -11,8 +11,8 @@ class RobotEyes {
   private:
       U8G2_SH1106_128X64_NONAME_F_HW_I2C& display;
       const uint8_t TCA9548A_ADDR = 0x70;
-      const uint8_t LEFT_EYE_CHANNEL = 0;
-      const uint8_t RIGHT_EYE_CHANNEL = 1;
+      const uint8_t LEFT_EYE_CHANNEL = 7;
+      const uint8_t RIGHT_EYE_CHANNEL = 6;
   
       void selectChannel(uint8_t channel) {
           Wire.beginTransmission(TCA9548A_ADDR);
